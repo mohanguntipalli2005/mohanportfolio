@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohan Guntupalli - Computer Science (AI) student & Java Backend Developer Portfolio. Discover projects, skills, education, and professional certifications.">
+    <meta name="keywords" content="Mohan Guntupalli, Developer Portfolio, Java Backend Developer, Artificial Intelligence Student, Sri Vasavi Engineering College, Web Developer">
+    <meta name="author" content="Mohan Guntupalli">
+    
+    <title>Mohan Guntupalli | Professional Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/profile.jpg">
+    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- AOS (Animate On Scroll) Stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS Stylesheet (Modular & Glassmorphic) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Vanta Net Background Canvas -->
+    <div id="vantajs"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                Mohan<span style="color: #38BDF8;">.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="right-nav">
+                <a href="https://github.com/mohanguntipalli2005" target="_blank" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohan-guntupalli-4a917a2ba/" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <i class="fa-solid fa-moon" id="theme-toggle" title="Toggle Light/Dark Theme" role="button" aria-label="Toggle Theme"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+        <div class="hero-left" data-aos="fade-right">
+            <h3>Hello, I'm</h3>
+            <h1>Mohan Guntupalli</h1>
+            <h2>
+                <span id="typing"></span>
+            </h2>
+            <p>
+                Computer Science (AI) student passionate about Java, Python, AI, Machine Learning, and Full Stack Development. Always learning, optimizing algorithms, and building interactive, performance-oriented projects.
+            </p>
+            <div class="hero-buttons">
+                <a href="resume/Resume.pdf" download="Mohan_Guntupalli_Resume.pdf" style="text-decoration: none;">
+                    <button class="btn1">
+                        Download Resume <i class="fa-solid fa-download" style="margin-left: 8px;"></i>
+                    </button>
+                </a>
+                <a href="#contact" style="text-decoration: none;">
+                    <button class="btn2">
+                        Contact Me
+                    </button>
+                </a>
+            </div>
+            <div class="hero-icons">
+                <a href="https://github.com/mohanguntipalli2005" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohan-guntupalli-4a917a2ba/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:mohanguntupalli2005@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-right" data-aos="fade-left">
+            <div class="laptop-container">
+                <div class="laptop" id="laptop-mock">
+                    <div class="laptop-screen">
+                        <div class="dino-game-wrapper" id="dino-game-container">
+                            <canvas id="dino-canvas"></canvas>
+                            <div class="dino-start-screen" id="dino-start">
+                                <div class="dino-icon-msg">🦖</div>
+                                <p class="dino-msg-title">Offline Chrome Dino</p>
+                                <p class="dino-msg-text">Press Space or Click to Play</p>
+                            </div>
+                            <div class="dino-game-over" id="dino-gameover" style="display: none;">
+                                <h3>GAME OVER</h3>
+                                <div class="dino-restart-btn" id="dino-restart">
+                                    <i class="fa-solid fa-rotate-right"></i>
+                                </div>
+                                <p>Press Space or Click Screen</p>
+                            </div>
+                            <div class="dino-score-board">
+                                <span id="dino-highscore" class="high-score">HI 00000</span>
+                                <span id="dino-score">00000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop-base">
+                        <div class="keyboard"></div>
+                        <div class="trackpad"></div>
+                    </div>
+                </div>
+                <div class="laptop-desk-shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ME ================= -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know me</p>
+        </div>
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right">
+                <img src="src/assets/images/regenerated_image_1782894262314.png" alt="Mohan Guntupalli About Me Photo">
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <h3>Java Backend Developer & AI Student</h3>
+                <p>
+                    I'm <strong>Mohan Guntupalli</strong>, a Computer Science (Artificial Intelligence) student at Sri Vasavi Engineering College. I enjoy building robust Java applications, designing backend server systems, querying relational databases, and solving algorithmic problems. 
+                </p>
+                <div class="about-info">
+                    <div>
+                        <h4>Name</h4>
+                        <span>Mohan Guntupalli</span>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <span>mohanguntupalli2005@gmail.com</span>
+                    </div>
+                    <div>
+                        <h4>Education</h4>
+                        <span>B.Tech CSE (CAI)</span>
+                    </div>
+                    <div>
+                        <h4>College</h4>
+                        <span>Sri Vasavi Engineering College</span>
+                    </div>
+                    <div>
+                        <h4>CGPA</h4>
+                        <span>7.5</span>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <span>Tadepalligudem, Andhra Pradesh</span>
+                    </div>
+                </div>
+                <a href="resume/Resume.pdf" download="Mohan_Guntupalli_Resume.pdf" style="text-decoration: none;">
+                    <button class="btn1">
+                        Download CV <i class="fa-solid fa-file-pdf" style="margin-left: 8px;"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education">
+        <div class="section-title">
+            <h2>Education</h2>
+            <p>My Academic Journey</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech - Computer Science (Artificial Intelligence)</h3>
+                    <h4>Sri Vasavi Engineering College, Tadepalligudem</h4>
+                    <p>2023 - 2027</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h3>Intermediate (MPC)</h3>
+                    <h4>Sasi Junior College, Nidadavole</h4>
+                    <p>2021 - 2023</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h3>CBSE (10th)</h3>
+                    <h4>AKRG English Medium School, Nidadavole</h4>
+                    <p>2020 - 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <p>Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+                <p>Core Java, OOP Paradigms, Collections Framework, Multithreading</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <p>Scripting, Data Manipulation, Machine Learning basics</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL / DBMS</h3>
+                <p>Database Design, Query Optimization, Normalization</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+                <p>Version Control, Branch Management, Collaboration workflows</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
+            <p>Some of my recent work</p>
+        </div>
+        <div class="project-container">
+            <div class="project-card" data-aos="flip-left">
+                <div class="project-image">
+                    <img src="images/tictactoe.png" alt="Tic Tac Toe Game Interface">
+                </div>
+                <div class="project-content">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>
+                        An interactive Java-based Tic Tac Toe game developed using Object-Oriented Programming concepts, customized game boards, and intelligent game loops.
+                    </p>
+                    <div class="tech">
+                        <span>Java</span>
+                        <span>OOP Principles</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/mohanguntipalli2005" target="_blank" style="text-decoration: none;">
+                            <button>View GitHub <i class="fa-brands fa-github" style="margin-left: 6px;"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="flip-right">
+                <div class="project-image">
+                    <img src="images/property.png" alt="Property Price Prediction Analytics">
+                </div>
+                <div class="project-content">
+                    <h3>Property Price Prediction</h3>
+                    <p>
+                        A Machine Learning project focused on analyzing housing datasets to forecast real estate costs using Python, pandas, and linear regression models.
+                    </p>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/mohanguntipalli2005" target="_blank" style="text-decoration: none;">
+                            <button>View GitHub <i class="fa-brands fa-github" style="margin-left: 6px;"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="flip-left">
+                <div class="project-image">
+                    <img src="images/guessgame.png" alt="Guess Number Game Terminal Interface">
+                </div>
+                <div class="project-content">
+                    <h3>Guess Number Game</h3>
+                    <p>
+                        A responsive Java console game implementing a robust binary search pattern where players guess a random number, tracking high scores and performance statistics.
+                    </p>
+                    <div class="tech">
+                        <span>Java</span>
+                        <span>Logic Building</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/mohanguntipalli2005" target="_blank" style="text-decoration: none;">
+                            <button>View GitHub <i class="fa-brands fa-github" style="margin-left: 6px;"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section id="certificates">
+        <div class="section-title">
+            <h2>Certifications</h2>
+            <p>Professional Certifications & Learning</p>
+        </div>
+        <div class="certificate-container">
+            <div class="certificate-card" data-aos="zoom-in" id="cert-oracle">
+                <div class="certificate-image">
+                    <img src="images/oracle_cert.jpg" alt="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional Certificate">
+                </div>
+                <div class="certificate-content">
+                    <h3>Oracle Cloud Infrastructure 2025</h3>
+                    <h4>Generative AI Professional</h4>
+                    <p>Issued by Oracle University</p>
+                    <div class="cert-meta">
+                        <span>Issued: August 25, 2025</span>
+                        <span>Credential ID: 102395766OCI25GAIOCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-card" data-aos="zoom-in" id="cert-salesforce">
+                <div class="certificate-image">
+                    <img src="images/salesforce_cert.jpg" alt="Salesforce Certified Agentforce Specialist Certificate">
+                </div>
+                <div class="certificate-content">
+                    <h3>Salesforce Certified</h3>
+                    <h4>Agentforce Specialist</h4>
+                    <p>Issued by Salesforce Trailhead</p>
+                    <div class="cert-meta">
+                        <span>Issued: December 16, 2025</span>
+                        <span>Credential ID: 7198082</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Let's Connect</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Get In Touch</h3>
+                <p>
+                    Feel free to contact me for internship opportunities, technical collaborations, projects, or professional networking. I'm always looking to connect!
+                </p>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>mohanguntupalli2005@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/mohan-guntupalli-4a917a2ba/" target="_blank">
+                        linkedin.com/in/mohan-guntupalli
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/mohanguntipalli2005" target="_blank">
+                        github.com/mohanguntipalli2005
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left">
+                <input type="text" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea rows="6" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                <button type="submit">
+                    Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-content">
+            <h2>Mohan Guntupalli</h2>
+            <p>Java Backend Developer | AI Student</p>
+            <div class="footer-icons">
+                <a href="https://github.com/mohanguntipalli2005" target="_blank" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohan-guntupalli-4a917a2ba/" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:mohanguntupalli2005@gmail.com" aria-label="Send Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 Mohan Guntupalli. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= EXTERNAL SCRIPTS ================= -->
+    <!-- Three JS (Dependency for Vanta) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    
+    <!-- Vanta Net Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
+    <!-- Typed JS (Rotating Hero Strings) -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom script.js (Interactive Logic) -->
+    <script src="script.js"></script>
+</body>
+</html>
