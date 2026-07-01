@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // To start receiving real emails in your inbox (mohanguntupalli2005@gmail.com):
     // 1. Visit https://web3forms.com/ and request a free Access Key.
     // 2. Paste your Access Key inside the quotes below:
-    const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+    const WEB3FORMS_ACCESS_KEY = "28d60191-4938-4665-9542-354d90be350f";
 
     // ==============================
     // CONTACT FORM INTERACTIVE HANDLER
