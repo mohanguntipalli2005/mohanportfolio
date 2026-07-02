@@ -1,0 +1,60 @@
+MOHAN GUNTUPALLI
+Email: mohanguntupalli2005@gmail.com | Location: Nidadavole, Andhra Pradesh, India
+LinkedIn: https://www.linkedin.com/in/mohan-guntupalli-4a917a2ba/
+GitHub: https://github.com/mohanguntipalli2005
+
+--------------------------------------------------------------------------------
+PROFESSIONAL SUMMARY
+--------------------------------------------------------------------------------
+Passionate Computer Science & Engineering (Artificial Intelligence) student with 
+strong foundational skills in Java backend development, Python, SQL, and 
+Machine Learning. Experienced in implementing Object-Oriented Programming (OOP)
+paradigms and building robust algorithmic solutions. Enthusiastic learner 
+committed to building high-performance full-stack applications.
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+Sri Vasavi Engineering College (2023 - 2027)
+B.Tech in Computer Science and Engineering (Artificial Intelligence)
+CGPA: 7.3 / 10
+
+Sasi Junior College (2021 - 2023)
+Intermediate (MPC - Mathematics, Physics, Chemistry)
+Percentage: 90.4%
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+- Languages: Java (Core, OOP, Collections), Python, JavaScript, HTML5, CSS3
+- Databases: SQL, DBMS (Database Management Systems, relational queries)
+- Version Control: Git & GitHub
+- AI & ML: Machine Learning models, regression analysis, predictive modeling
+- Frameworks & Tools: Spring Boot (Learning), Vite, Vanilla JS
+
+--------------------------------------------------------------------------------
+KEY PROJECTS
+--------------------------------------------------------------------------------
+1. Tic Tac Toe Game (Java)
+   - Developed a fully interactive, console/UI-based Tic Tac Toe game using Java.
+   - Leveraged OOP principles, game state management, and algorithm optimizations.
+
+2. Property Price Prediction (Python & Machine Learning)
+   - Created a predictive analysis model to forecast real estate values.
+   - Built with Python using regression models, data cleaning, and feature engineering.
+
+3. Guess Number Game (Java)
+   - Engineered a responsive game loop with logic building and score tracking.
+
+--------------------------------------------------------------------------------
+CERTIFICATIONS
+--------------------------------------------------------------------------------
+- Oracle Cloud Infrastructure (OCI) 2025 Generative AI Professional
+- Salesforce Agentforce Specialist (Trailhead)
+- Full Stack Web Development (Ongoing)
+
+--------------------------------------------------------------------------------
+LANGUAGES
+--------------------------------------------------------------------------------
+- English (Professional)
+- Telugu (Native)
